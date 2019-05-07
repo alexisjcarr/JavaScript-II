@@ -58,7 +58,7 @@ function contains(item, list, cb) {
   return cb(list.includes(item));
 }
 
-contains("Pencil", items, bool => console.log(bool)); //check
+contains("Pencil", items, bool => console.log(bool)); 
 
 /* STRETCH PROBLEM */
 
