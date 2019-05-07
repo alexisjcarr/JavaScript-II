@@ -1,6 +1,20 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+const inception = () => {
+  const outerLayer = "No. Not there yet.";
+  console.log('Are we there yet?', outerLayer);
+  inner();
+
+  function inner() {
+    const innerLayer = "We're here. Hurry up.";
+    console.log("You guys out there okay?", outerLayer);
+    console.log("Oh crap, well...", innerLayer);
+  }
+}
+
+inception();
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
