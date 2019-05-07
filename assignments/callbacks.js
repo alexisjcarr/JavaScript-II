@@ -55,10 +55,10 @@ multiplyNums(10, 10, prod => console.log(prod));
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  return(list.includes(item));
+  return cb(list.includes(item));
 }
 
-console.log(contains("Pencil", items, bool => console.log(bool))); //check
+contains("Pencil", items, bool => console.log(bool)); //check
 
 /* STRETCH PROBLEM */
 
